@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- MENU HEADER -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Santiago</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="select()">HOME</a></li>
+                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="select()">CURRICULUM</a></li>
+                    <li><a href="#certifications" onclick="select()">CERTIFICATIONS</a></li>
+                    <!-- <li><a href="#contact" onclick="select()">CONTACT</a></li> -->
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="showMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- HOME -->
+    <secttion id="home" class="home">
+        <div class="banner-content">
+            <div class="img-content">
+                <img src="img/hero.png">
+            </div>
+            <h1>SANTIAGO CURETTI</h1>
+            <h2>Salesforce Developer</h2>
+            <div class="socialmedia">
+                <a href="https://www.linkedin.com/in/santiago-curetti/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://trailblazer.me/id/scuretti" target="_blank"><i class="fa-brands fa-salesforce"></i></a>
+            </div>
+        </div>
+    </secttion>
+
+    <!-- ABOUT ME -->
+    <section id="aboutme" class="aboutme">
+        <div class="section-content">
+            <h2>About me</h2>
+            <p><span>Hi, I am Santiago Curetti</span> Aca hablo sobre mi</p>
+
+            <div class="row">
+                <!-- data -->
+                <div class="column">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Email</strong>
+                            santiagocuretti@gmail.com
+                        </li>
+                        <li>
+                            <strong>Country</strong>
+                            Argentina
+                        </li>
+                        <li>
+                            <strong>Role</strong>
+                            Salesforce Developer
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- hobbies -->
+                <div class="column">
+                    <h3>Hobbies</h3>
+                    <div class="hobbies-content">
+                        <div class="hobbies">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Soccer</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-person-swimming"></i>
+                            <span>Swimming</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Gym</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-person-skiing"></i>
+                            <span>Skiing</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-brands fa-spotify"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Cars</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- Technical Skills -->
+                <div class="column">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Apex</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lightning Web Components & JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>VisualForce</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Salesforce Administrator</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>OmniStudio</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="column">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunication</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="section-content">
+            <h2>Curriculum</h2>
+            <div class="row">
+                <div class="column left">
+                    <h3>Education</h3>
+                    <div class="item l">
+                        <h4>Trailhead</h4>
+                        <span class="place">Salesforce</span>
+                        <span class="date">Oct 2021 - Today</span>
+                        <p>Ranger rank + 11 Superbadge</p>
+                    </div>
+                    <div class="item l">
+                        <h4>Lic Analisis de Sistema</h4>
+                        <span class="place">Universidad de Buenos Aires</span>
+                        <span class="date">2020 - Today</span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="column right">
+                    <h3>Work Experience</h3>
+                    <div class="item r">
+                        <h4>Salesforce Developer</h4>
+                        <span class="place">Capgemini</span>
+                        <span class="date">Ene 2022 - Today</span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="certifications">
+        <div class="section-content">
+            <h2>CERTIFICATIONS</h2>
+            <div class="certs">
+                <div class="cert">
+                    <img src="img/SF-Certified_OmniStudio-Consultant.png" alt="">
+                    <div class="overlay">
+                        <h3>Certified OmniStudio Consultant</h3>
+                        <p>July 2023</p>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="img/SF-Certified_Associate.png" alt="">
+                    <div class="overlay">
+                        <h3>Certified Associate</h3>
+                        <p>May 2023</p>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="img/SF-Certified_Platform-Developer-II.png" alt="">
+                    <div class="overlay">
+                        <h3> Certified Platform Developer II</h3>
+                        <p>February 2023</p>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="img/SF-Certified_JavaScript-Developer-I.png" alt="">
+                    <div class="overlay">
+                        <h3>Certified JavaScript Developer I</h3>
+                        <p>October 2022</p>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="img/SF-Certified_Platform-App-Builder.png" alt="">
+                    <div class="overlay">
+                        <h3>Certified Platform App Builder</h3>
+                        <p>July 2022</p>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="img/SF-Certified_Platform-Developer-I.png" alt="">
+                    <div class="overlay">
+                        <h3>Certified Platform Developer I</h3>
+                        <p>July 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT 
+    <section id="contact" class="contact">
+        <h2>CONTACT</h2>
+        <div class="row">
+            <div class="column">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button>
+                    Send<i class="fa-solid fa-envelope"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </i></a>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/santiago-curetti/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://trailblazer.me/id/scuretti" target="_blank"><i class="fa-brands fa-salesforce"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
